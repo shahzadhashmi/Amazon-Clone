@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 /* 
 html,body {
     height: 100vh;
@@ -46,9 +47,11 @@ html,body {
     font-size: 0.85rem;
     margin-left: 15px;
 }
+
 .add-icon {
     display: flex;
 }
+
 .add-second {
     font-size: 1rem;
     margin-left: 3px;
@@ -119,6 +122,33 @@ span {
     font-weight: 700;
 } */
 
+@media (max-width: 768px) {
+
+    .navbar {
+        align-items: center;
+    }
+
+    .nav-search {
+        width: 80%;
+    }
+
+    .nav-cart {
+        margin-right: 10px;
+        margin-left: 10px ;  
+    }
+
+    .search-select option {
+        font-size: 1rem;
+    }
+
+    .nav-address,
+    .nav-signin,
+    .nav-return, .nav-cart span {
+        display: none;
+    }
+}
+
+
 /** panel */
 
 .panel {
@@ -129,25 +159,36 @@ span {
     align-items: center;
     color: white;
 }
+
 .panel-all {
     display: flex;
 }
+
 .panel-all span {
     font-size: 1rem;
     margin-left: 5px;
 }
+
 .panel-ops {
     width: 70%;
     font-size: 0.85rem;
 }
+
 .panel-ops p {
     display: inline;
     margin-left: 15px;
 }
 
-.panel-deals p{
+.panel-deals p {
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .panel-ops {
+        display: none;
+    }
+
 }
 
 /** hero section **/
@@ -157,7 +198,7 @@ span {
     height: 350px;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -173,11 +214,23 @@ span {
     align-items: center;
     width: 80%;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .hero-msg a {
     color: #007185;
     text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+       height: 130px;
+    }
+
+    .hero-msg {
+        display: none;
+    }
 }
 
 /** Shop Section */
@@ -215,8 +268,31 @@ span {
 .box-content p {
     color: #007185;
 }
+
 .box-content h2 {
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .shop-section {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .box {
+        width: 48%;
+    }
+}
+
+@media (max-width: 425px) {
+    .shop-section {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+    }
+
 }
 
 /* footer */
@@ -288,4 +364,12 @@ ul a:hover {
 
 .copyright {
     padding-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .foot-panel2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
